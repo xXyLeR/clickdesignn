@@ -104,46 +104,75 @@ section {
 }
 
 /* Serviços */
-.servicos {
-    background-color: #fff;
+/* Seção de Serviços */
+.services {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
 }
 
-.servicos-container {
+.services-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.servico {
-    background-color: #f1f1f1;
-    padding: 30px;
-    width: 30%;
+/* Card de Serviços */
+.service-card {
+    width: 23%; /* 4 cards por linha */
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.servico:hover {
+.service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.servico-icon {
+.service-icon {
     font-size: 40px;
     color: #ff4500;
-    margin-bottom: 20px;
-}
-
-.servico h3 {
-    font-size: 24px;
     margin-bottom: 15px;
 }
 
-.servico p {
+.service-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
     font-size: 16px;
     color: #555;
+}
+
+/* Responsividade para telas menores (tablets e smartphones) */
+@media (max-width: 1024px) {
+    .service-card {
+        width: 48%; /* 2 cards por linha em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* 1 card por linha em smartphones */
+    }
+
+    .services-container {
+        justify-content: center; /* Centraliza os cards */
+    }
+
+    .service-card h3 {
+        font-size: 20px; /* Ajuste do tamanho do título */
+    }
+
+    .service-card p {
+        font-size: 14px; /* Ajuste do tamanho do texto */
+    }
 }
 
 /* Cards do Portfólio */
