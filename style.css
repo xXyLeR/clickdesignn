@@ -1,0 +1,295 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background-color: #1e2a3a;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #ff4500;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #333; /* Mudando a cor do título para preto */
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #333; /* Mudando a cor do parágrafo para preto */
+}
+
+.cta-button {
+    background-color: #ff4500;
+    color: white;
+    padding: 18px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e43d00;
+}
+
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Serviços */
+.servicos {
+    background-color: #fff;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servico {
+    background-color: #f1f1f1;
+    padding: 30px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.servico-icon {
+    font-size: 40px;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.servico h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Cards do Portfólio */
+/* Portfólio */
+.portfolio {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo dos Cards */
+.portfolio-card {
+    width: 30%; /* Padrão para desktop */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-align: center;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card-content {
+    padding: 20px;
+}
+
+.portfolio-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.portfolio-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.portfolio-button {
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-button:hover {
+    background-color: #e43d00;
+}
+
+/* Contato */
+.contato {
+    background-color: #1e2a3a;
+    color: white;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato input,
+.contato textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    border-color: #ff4500;
+}
+
+.contato button {
+    background-color: #ff4500;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato button:hover {
+    background-color: #e43d00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+/* Responsividade para telas menores (tablets e smartphones) */
+@media (max-width: 1024px) {
+    .portfolio-card {
+        width: 48%; /* Ajusta para 2 cards por linha em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-card {
+        width: 100%; /* Em smartphones, 1 card por linha */
+    }
+
+    .portfolio-container {
+        justify-content: center; /* Centraliza os cards */
+    }
+
+    .portfolio-card-content {
+        padding: 15px;
+    }
+
+    .portfolio-card h3 {
+        font-size: 20px; /* Tamanho do título reduzido */
+    }
+
+    .portfolio-card p {
+        font-size: 14px; /* Tamanho do texto reduzido */
+    }
+
+    .portfolio-button {
+        padding: 10px 20px; /* Ajuste no tamanho do botão */
+        font-size: 14px;
+    }
+}
