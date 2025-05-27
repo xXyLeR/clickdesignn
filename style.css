@@ -1,324 +1,409 @@
-/* Reset de estilos */
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Navbar */
-header {
-    background-color: #1e2a3a;
-    padding: 15px 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav .logo {
-    font-size: 28px;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 2px;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav .nav-links {
-    list-style: none;
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0077cc;
 }
 
-nav .nav-links li {
-    display: inline;
-    margin-left: 20px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s;
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav .nav-links a:hover {
-    color: #ff4500;
+.nav-links a:hover {
+  color: #0077cc;
 }
 
-/* Hero Section */
-/* Hero Section */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Hero */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 150px 20px;
+  background: linear-gradient(to right, #0077cc, #005fa3);
+  color: #fff;
+  padding: 80px 0;
 }
 
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: #333; /* Mudando a cor do título para preto */
+.hero-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
 }
 
-.hero p {
-    font-size: 22px;
-    margin-bottom: 30px;
-    color: #333; /* Mudando a cor do parágrafo para preto */
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
 }
 
 .cta-button {
-    background-color: #ff4500;
-    color: white;
-    padding: 18px 40px;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  background-color: #fff;
+  color: #0077cc;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #e43d00;
+  background-color: #e6e6e6;
 }
 
-
-/* Seções */
-section {
-    padding: 60px 20px;
-    text-align: center;
+.hero-image img {
+  max-width: 100%;
+  height: auto;
 }
 
+/* Section Title */
 .section-title {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 40px;
-    color: #333;
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 60px 0 30px;
+  color: #333;
+  position: relative;
 }
 
-/* Serviços */
-/* Seção de Serviços */
-.services {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #0077cc;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
-/* Card de Serviços */
 .service-card {
-    width: 23%; /* 4 cards por linha */
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 .service-icon {
-    font-size: 40px;
-    color: #ff4500;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 15px;
 }
 
-.service-card h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+/* Portfolio */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.service-card p {
-    font-size: 16px;
-    color: #555;
+.portfolio-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
-/* Responsividade para telas menores (tablets e smartphones) */
-@media (max-width: 1024px) {
-    .service-card {
-        width: 48%; /* 2 cards por linha em tablets */
-    }
+.portfolio-item img {
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width: 768px) {
-    .service-card {
-        width: 100%; /* 1 card por linha em smartphones */
-    }
-
-    .services-container {
-        justify-content: center; /* Centraliza os cards */
-    }
-
-    .service-card h3 {
-        font-size: 20px; /* Ajuste do tamanho do título */
-    }
-
-    .service-card p {
-        font-size: 14px; /* Ajuste do tamanho do texto */
-    }
+.portfolio-item h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
 }
 
-/* Cards do Portfólio */
-/* Portfólio */
-.portfolio {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
+.portfolio-item p {
+  padding: 0 15px 15px;
+  font-size: 0.95rem;
 }
 
-.portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+.portfolio-item a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-/* Estilo dos Cards */
-.portfolio-card {
-    width: 30%; /* Padrão para desktop */
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden;
-    text-align: center;
+.portfolio-item a:hover {
+  text-decoration: underline;
 }
 
-.portfolio-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+/* Sobre */
+.sobre {
+  padding: 60px 0;
+  background-color: #eef2f7;
 }
 
-.portfolio-card-content {
-    padding: 20px;
+.sobre-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-.portfolio-card h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #333;
+.sobre-text {
+  flex: 1 1 400px;
+  font-size: 1.1rem;
+  padding: 20px;
 }
 
-.portfolio-card p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
+.sobre-img {
+  flex: 1 1 400px;
+  text-align: center;
 }
 
-.portfolio-button {
-    background-color: #ff4500;
-    color: white;
-    padding: 12px 30px;
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.sobre-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.1);
 }
 
-.portfolio-button:hover {
-    background-color: #e43d00;
+/* Depoimentos */
+.testemunhos {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.testemunhos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testemunho {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.testemunho strong {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  color: #555;
+}
+
+/* FAQ */
+.faq {
+  background-color: #eef2f7;
+  padding: 60px 20px;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.faq-item h4 {
+  font-size: 1.1rem;
+  color: #0077cc;
+}
+
+.faq-item p {
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer .social-links {
+  margin: 20px 0;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #fff;
 }
 
 /* Contato */
 .contato {
-    background-color: #1e2a3a;
-    color: white;
+  padding: 60px 0;
 }
 
-.contato form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.contato input,
-.contato textarea {
-    margin-bottom: 20px;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s;
+.contato-form input,
+.contato-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
 }
 
-.contato input:focus,
-.contato textarea:focus {
-    border-color: #ff4500;
+.contato-form button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.contato button {
-    background-color: #ff4500;
-    color: white;
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.contato-form button:hover {
+  background-color: #005fa3;
 }
 
-.contato button:hover {
-    background-color: #e43d00;
+/* Botão Flutuante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
 }
 
-footer p {
-    font-size: 16px;
-}
-/* Responsividade para telas menores (tablets e smartphones) */
-@media (max-width: 1024px) {
-    .portfolio-card {
-        width: 48%; /* Ajusta para 2 cards por linha em tablets */
-    }
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
 }
 
+/* Animações sutis */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text, .service-card, .portfolio-item, .sobre-text, .contato-form, .testemunho, .faq-item {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Responsivo extra */
 @media (max-width: 768px) {
-    .portfolio-card {
-        width: 100%; /* Em smartphones, 1 card por linha */
-    }
-
-    .portfolio-container {
-        justify-content: center; /* Centraliza os cards */
-    }
-
-    .portfolio-card-content {
-        padding: 15px;
-    }
-
-    .portfolio-card h3 {
-        font-size: 20px; /* Tamanho do título reduzido */
-    }
-
-    .portfolio-card p {
-        font-size: 14px; /* Tamanho do texto reduzido */
-    }
-
-    .portfolio-button {
-        padding: 10px 20px; /* Ajuste no tamanho do botão */
-        font-size: 14px;
-    }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
+
+
