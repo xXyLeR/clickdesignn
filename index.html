@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Criação de Sites Profissionais</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ClickDesign | Agência de Criação de Sites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <div class="logo">ClickDesign</div>
-            <ul class="nav-links">
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Transforme sua ideia em um site incrível</h1>
-            <p>Criação de sites modernos, rápidos e responsivos para destacar sua marca online.</p>
-            <a href="https://wa.me/5541991344538" class="cta-button" target="_blank">Solicite um Orçamento</a>
-        </div>
-    </section>
-
-    <!-- Serviços -->
-    <section id="services" class="services">
-    <h2 class="section-title">Meus Serviços</h2>
-    <div class="services-container">
-        <div class="service-card">
-            <i class="service-icon fas fa-laptop-code"></i>
-            <h3>Criação de Sites</h3>
-            <p>Desenvolvo sites modernos, rápidos e responsivos para destacar sua marca na web.</p>
-        </div>
-        <div class="service-card">
-            <i class="service-icon fas fa-palette"></i>
-            <h3>Design Gráfico</h3>
-            <p>Criação de layouts personalizados, identidade visual e design gráfico para sua marca.</p>
-        </div>
-        <div class="service-card">
-            <i class="service-icon fas fa-mobile-alt"></i>
-            <h3>Sites Responsivos</h3>
-            <p>Garantimos que seu site seja acessível e funcional em qualquer dispositivo.</p>
-        </div>
-        <div class="service-card">
-            <i class="service-icon fas fa-search-dollar"></i>
-            <h3>SEO e Otimização</h3>
-            <p>Otimização para motores de busca para melhorar o posicionamento do seu site no Google.</p>
-        </div>
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">ClickDesign</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/5541991344538" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> Orçamento
+      </a>
     </div>
-</section>
+  </header>
 
-
-    <!-- Portfólio -->
-    <section id="portfolio" class="portfolio">
-    <h2 class="section-title">Portfólio</h2>
-    <div class="portfolio-container">
-        <div class="portfolio-card">
-            <div class="portfolio-card-content">
-                <h3>Projeto 1: Site Corporativo</h3>
-                <p>Design moderno e funcional, otimizado para uma empresa de tecnologia.</p>
-                <a href="https://fiedlercontabilidade.netlify.app/" class="portfolio-button" target="_blank">Ver Projeto</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-card-content">
-                <h3>Projeto 2: Loja Virtual</h3>
-                <p>Loja virtual com design intuitivo e integração de sistema de pagamento.</p>
-                <a href="https://seusite2.com" class="portfolio-button" target="_blank">Ver Projeto</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-card-content">
-                <h3>Projeto 3: Portfólio Pessoal</h3>
-                <p>Site pessoal com animações e design elegante para um designer gráfico.</p>
-                <a href="https://systemupsolucoes.netlify.app/" class="portfolio-button" target="_blank">Ver Projeto</a>
-            </div>
-        </div>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Criação de Sites Profissionais</h1>
+        <p>Desenvolvemos sites modernos, responsivos e otimizados para empresas, profissionais e lojas virtuais.</p>
+        <a href="#contato" class="cta-button">Fale com a gente</a>
+      </div>
+      
     </div>
-</section>
+  </section>
 
-    <!-- Contato -->
-    <section id="contato" class="contato">
-        <h2 class="section-title">Entre em Contato</h2>
-        <form action="#" method="POST">
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-    </section>
+  <section id="servicos" class="services">
+    <div class="container">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-code service-icon"></i>
+          <h3>Sites Institucionais</h3>
+          <p>Ideal para empresas e profissionais que desejam presença online com credibilidade.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shopping-cart service-icon"></i>
+          <h3>Lojas Virtuais</h3>
+          <p>Criação de e-commerces completos com carrinho, meios de pagamento e gestão de produtos.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-mobile-alt service-icon"></i>
+          <h3>Responsividade</h3>
+          <p>Seu site acessível em todos os dispositivos, de forma rápida e adaptável.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-search service-icon"></i>
+          <h3>SEO</h3>
+          <p>Otimização para buscadores para que sua marca apareça no Google e alcance mais clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 SeuNomeDesign. Todos os direitos reservados.</p>
-    </footer>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfólio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">         
+          <h3>Site Corporativo</h3>
+          <p>Website elegante e funcional para empresa de tecnologia.</p>
+          <a href="https://fiedlercontabilidade.netlify.app/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="portfolio-item">         
+          <h3>Loja Virtual</h3>
+          <p>Loja com design moderno e integração com sistemas de pagamento.</p>
+          <a href="https://chaveiroelitebc.netlify.app/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="portfolio-item">          
+          <h3>Portfólio Criativo</h3>
+          <p>Design pessoal com animações e apresentação visual profissional.</p>
+          <a href="https://systemupsolucoes.netlify.app/" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="script.js"></script>
+  <section id="sobre" class="sobre">
+    <div class="container sobre-content">
+      <div class="sobre-text">
+        <h2>Sobre a ClickDesign</h2>
+        <p>Somos uma agência digital especializada em criar soluções web personalizadas para clientes de todos os setores. Do design ao desenvolvimento, entregamos sites com qualidade, velocidade e foco em resultados.</p>
+      </div>
+      <div class="sobre-img">
+              </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <form class="contato-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ClickDesign. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5541991344538" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
 </body>
 </html>
